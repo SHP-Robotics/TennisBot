@@ -159,6 +159,8 @@ public class BaseRobot extends OpMode {
     /**
      * @param power:   the speed to drive at. Negative for reverse.
      * @param inches:  the distance to drive.
+     * @param desiredHeading:  the desired angle.
+     * @param currentHeading:  the current angle. (angles.firstAngle)
      * @return Whether the target distance has been reached.
      */
 
@@ -224,7 +226,7 @@ public class BaseRobot extends OpMode {
 
     /**
      * @param desiredHeading: the heading to turn to.
-     * @param currentHeading: the current imu heading.
+     * @param currentHeading: the current imu heading. (angles.firstAngle)
      * @return Whether the target angle has been reached.
      */
     public boolean auto_turn_imu(float desiredHeading, float currentHeading) {
